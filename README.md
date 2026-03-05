@@ -6,7 +6,7 @@
 
 A .NET console application that demonstrates the [**ToonSharp**](https://www.nuget.org/packages/ToonSharp) serialization library -- including serialization, deserialization, streaming, custom options, and a head-to-head benchmark against `System.Text.Json`.
 
-> **Looking for the full article?** See [`ARTICLE.md`](ARTICLE.md) for an in-depth write-up suitable for Medium / blog publishing.
+> **Looking for the full article?** See [**Medium Article**](https://medium.com/@jha.aaryan/what-if-your-net-api-could-be-half-the-size-introducing-toonsharp-for-net-b987d0103972)
 
 ---
 
@@ -214,7 +214,7 @@ var restored = await ToonSerializer.DeserializeAsync<MyType>(stream);
 ## Related Resources
 
 - [ToonSharp on NuGet](https://www.nuget.org/packages/ToonSharp)
-- [`ARTICLE.md`](ARTICLE.md) -- Full article with explanations, use cases, and diagrams
+- [**Medium Article**](https://medium.com/@jha.aaryan/what-if-your-net-api-could-be-half-the-size-introducing-toonsharp-for-net-b987d0103972)-- Full article with explanations, use cases, and diagrams
 
 ---
 
