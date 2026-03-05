@@ -4,7 +4,7 @@
 [![NuGet](https://img.shields.io/nuget/v/ToonSharp?label=ToonSharp&logo=nuget)](https://www.nuget.org/packages/ToonSharp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-A .NET console application that demonstrates the [**ToonSharp**](https://www.nuget.org/packages/ToonSharp) serialization library — including serialization, deserialization, streaming, custom options, and a head-to-head benchmark against `System.Text.Json`.
+A .NET console application that demonstrates the [**ToonSharp**](https://www.nuget.org/packages/ToonSharp) serialization library -- including serialization, deserialization, streaming, custom options, and a head-to-head benchmark against `System.Text.Json`.
 
 > **Looking for the full article?** See [`ARTICLE.md`](ARTICLE.md) for an in-depth write-up suitable for Medium / blog publishing.
 
@@ -12,7 +12,7 @@ A .NET console application that demonstrates the [**ToonSharp**](https://www.nug
 
 ## What Is Toon?
 
-Toon is a human-readable, key-value serialization format. It strips out JSON's syntactic overhead — braces, brackets, key quoting — and replaces it with indentation-based nesting and inline arrays:
+Toon is a human-readable, key-value serialization format. It strips out JSON's syntactic overhead -- braces, brackets, key quoting -- and replaces it with indentation-based nesting and inline arrays:
 
 ```
 Name: Alice Johnson
@@ -23,19 +23,19 @@ Address:
 Hobbies[3]: Reading,Hiking,Photography
 ```
 
-Compare to JSON (16 lines with braces, brackets, and quotes everywhere) — Toon achieves the same in **10 lines**.
+Compare to JSON (16 lines with braces, brackets, and quotes everywhere) -- Toon achieves the same in **10 lines**.
 
 ---
 
 ## Project Structure
 
 ```
-??? Toon/
-?   ??? Toon.csproj            # Console app targeting .NET 10
-?   ??? Program.cs             # Demo: serialize, deserialize, benchmark
-?   ??? WeatherForecast.cs     # Model classes (WeatherForecast, UserProfile, Address)
-??? README.md                  # ? You are here
-??? ARTICLE.md                 # Full article (Medium-ready)
+Toon/
+|-- Toon.csproj            # Console app targeting .NET 10
+|-- Program.cs             # Demo: serialize, deserialize, benchmark
++-- WeatherForecast.cs     # Model classes (WeatherForecast, UserProfile, Address)
+README.md                  # <-- You are here
+ARTICLE.md                 # Full article (Medium-ready)
 ```
 
 ---
@@ -121,9 +121,9 @@ Results from a single run on .NET 10 (10,000 `WeatherForecast` objects):
 
 | Metric | Toon | JSON | Winner |
 |--------|------|------|--------|
-| **Payload size** (chars) | 1,013,702 | 1,103,702 | ? Toon (~8 % smaller) |
-| **Serialize** (ms) | 94 | 10 | ? JSON (~9× faster) |
-| **Deserialize** (ms) | 103 | 30 | ? JSON (~3× faster) |
+| **Payload size** (chars) | 1,013,702 | 1,103,702 | **Toon** (~8 % smaller) |
+| **Serialize** (ms) | 94 | 10 | **JSON** (~9x faster) |
+| **Deserialize** (ms) | 103 | 30 | **JSON** (~3x faster) |
 
 **Toon trades raw speed for smaller, cleaner output.** Best for config files, diagnostic logs, and internal messaging where readability matters more than throughput.
 
@@ -213,8 +213,8 @@ var restored = await ToonSerializer.DeserializeAsync<MyType>(stream);
 
 ## Related Resources
 
-- ?? [ToonSharp on NuGet](https://www.nuget.org/packages/ToonSharp)
-- ?? [`ARTICLE.md`](ARTICLE.md) — Full article with explanations, use cases, and diagrams
+- [ToonSharp on NuGet](https://www.nuget.org/packages/ToonSharp)
+- [`ARTICLE.md`](ARTICLE.md) -- Full article with explanations, use cases, and diagrams
 
 ---
 
